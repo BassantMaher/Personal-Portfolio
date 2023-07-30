@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <script type="text/javascript" src="jvscript.js"></script>
+    <title>Education</title>
+</head>
+<body>
+    <div class="coursesPage">
+        <div class="nav">
+            <nav class="navbar navbar-expand-md  navbar-dark">
+                 <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="bar navbar-nav">
+                        <li><a href="landingPage.html">Home</a></li>
+                        <li><a href="landingPage.html #about">About me</a></li>
+                        <li><a href="landingPage.html #skills">My skills</a></li>
+                        <li><a href="landingPage.html #gallary">Gallary</a></li>
+                        <li><a href="courses.html" class="active">Education</a></li>
+                        <li><a href="#Contact" onclick="openForm();">Contact me</a></li>
+                    </ul>
+                </div>
+             </nav>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form  class="form-container">
+              <h1>Contact Me</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Your Email" name="email" id="email" required>
+          
+              <label for="msg"><b>Message</b></label>
+              <!-- <input type="" placeholder="Your message" name="msg" id="message" required> -->
+              <textarea name="msg" placeholder="Your message" rows="5" cols="20" id="message" required></textarea>
+              <button type="button" class="btn" onclick="displayDetails();" id="sendMsg">Send Message</button>
+              <button type="button" class="btn cancel" onclick="closeForm();">Cancel</button>
+            </form>
+          </div>
+          <script>
+            let disp = document.getElementById("sendMsg");
+            disp.addEventListener("click", function(){
+                document.getElementById("myForm").style.display = "none";
+            }
+
+            );
+          </script>
+          <!-- end form -->
+        <div class="bodycourse">
+            <div class="courses">
+                <div class="dontcenter">
+                    <img src="images/COURSES THAT INSPIRED ME.png" width="80%" >
+                </div>
+                <!-- courses boxes -->
+                <div class="center">
+                    <div class="row2">
+                    <!-- start blocks -->
+                        <div class="column2">
+                            <div class="content2">
+                                <img src="images/courses/Untitled-1.jpg" alt="Keep going" style="width:100%">
+                                <h4>Python crash course</h4>
+                                <a href="https://youtube.com/playlist?list=PLomhh4glOqzALfR4ooOMTdC8-ptCU8loD" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="content2">
+                                <img src="images/courses/Untitled-7.jpg" alt="Keep going" style="width:100%">
+                                <h4>Introduction to c++</h4>
+                                <a href="https://youtube.com/playlist?list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="content2">
+                                <img src="images/courses/Untitled-2.jpg" alt="Keep going" style="width:100%">
+                                <h4>PYQT5 full course</h4>
+                                <a href="https://youtube.com/playlist?list=PLCC34OHNcOtpmCA8s_dpPMvQLyHbvxocY" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="content2">
+                                <img src="images/courses/Untitled-6.jpg
+                                " alt="Keep going" style="width:100%">
+                                <h4>Computer architecture</h4>
+                                <a href="https://youtube.com/playlist?list=PL-cKUB-e2KiswAkwZLJYlTzI69FpSJa50" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="content2">
+                                <img src="images/courses/Untitled-3.jpg" alt="Keep going" style="width:100%">
+                                <h4>Introduction to JAVA</h4>
+                                <a href="https://youtube.com/playlist?list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                            </div>
+                        </div>
+                        
+                    <div class="column2">
+                        <div class="content2">
+                            <img src="images/courses/Untitled-4.jpg" alt="Keep going" style="width:100%">
+                            <h4>Introduction to Data structure</h4>
+                            <a href="https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="content2">
+                            <img src="images/courses/Untitled-5.jpg" alt="Keep going" style="width:100%">
+                            <h4>Database fundamentals</h4>
+                            <a href="https://youtube.com/playlist?list=PL37D52B7714788190" target="_blank"><button type="button" class="coursebtn">View Course</button></a>
+                        </div>
+                    </div>
+                    <!-- end blocks -->
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- end courses -->
+            <!-- start certificates -->
+            <div class="certificates">
+                <div class="mycertificates">
+                    <img src="images/MYCERTIFICATES.png">
+                </div>
+                <div class="c-images">
+                    <div id="c1"><img src="images/photo_2023-07-28_18-47-59.jpg"></div>
+                    <div id="c2"><img src="images/Untitled-1.jpg"></div>
+                    <div id="c3"><img src="images/Untitled-2.jpg"></div>
+                    <div id="c4"><img src="images/Untitled-3.jpg"></div>
+                </div>
+            </div>
+            <!-- end certificates -->
+        </div>
+        <!-- end body -->
+        <!-- start footer -->
+        <div class="footer">
+            <div class="icnsfoot">
+                <a href="https://www.facebook.com/bassant.maher.2002?mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.behance.net/bassantmaher1" target="_blank"><i class="fa-brands fa-behance fa-lg"  style="color: #ffde22;"></i></a>
+                <a href="https://github.com/BassantMaher?tab=repositories " target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.linkedin.com/in/bassant-maher-66b1651b8 " target="_blank"><i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffde22;"></i></a>
+                
+            </div>
+            <hr>
+            © 2023 Bassant Maher All rights reserved
+        </div>
+        <!-- end footer -->
+            
+    </div>
+    <!-- end page layout -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <script type="text/javascript" src="jvscript.js"></script>
+    <title>Bassant Maher</title>
+</head>
+<body>
+    
+    <div class="landingPage">
+        <!-- create navbar -->
+        <div class="nav">
+            <nav class="navbar navbar-expand-md  navbar-dark">
+                 <!--collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="bar navbar-nav">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#skills">My skills</a></li>
+                        <li><a href="#gallary">Gallary</a></li>
+                        <li><a href="courses.html">Education</a></li>
+                        <li><a href="#Contact" onclick="openForm();">Contact me</a></li>
+                    </ul>
+                </div>
+             </nav>
+        </div>
+        <!-- end navbar -->
+        <!-- create pop up form -->
+        <div class="form-popup" id="myForm">
+            <form  class="form-container">
+              <h1>Contact Me</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Your Email" name="email" id="email"  required>
+              <label for="msg"><b>Message</b></label>
+              <textarea name="msg" placeholder="Your message" rows="5" cols="20" id="message" required></textarea>
+              <button type="button" class="btn" onclick="displayDetails();" id="sendMsg">Send Message</button>
+              <button type="button" class="btn cancel" onclick="closeForm();">Cancel</button>
+            </form>
+          </div>
+          <script>
+            let disp = document.getElementById("sendMsg");
+            disp.addEventListener("click", function(){
+                document.getElementById("myForm").style.display = "none";
+            }
+
+            );
+          </script>
+          <!-- end form -->
+          <!-- create body -->
+        <div class="body">
+            <a name="home"></a>
+            <!-- home part 1 -->
+            <div class="part1">
+                <h3 class="txt">Hi,</h3>
+                <h1 class="txt2 typed">I'M BASSANT MAHER</h1>
+                <h3 class="txt">COMPUTER ENGINEER</h3>
+                <button type="button" class="btn1 cv"><a href="cv/bassant maher - cv.pdf" target="_blank">DOWNLOAD CV</a></button>
+                <button type="button" class="btn1 about"><a href="#about">ABOUT ME</a></button>
+            </div>
+            <!-- end home part 1  -->
+            <a name="about"></a>
+            <!-- about me -->
+            <div class="part2">
+                <div class="box1">
+                    <img src="images/Group 2.png" width="70%">
+                </div>
+                <div class="box2">
+                        <div class="center">
+                        <img src="images/ABOUT ME.png" >
+                    </div>
+                    <div class="aboutText">My name is <span>Bassant Maher</span>
+                        <p>Experienced computer engineering student with good experience in web design and graphic design. As well as strong skills in front-end development, graphic design, UI/UX, problem solving and seeking to learn more and gain more experience. I volunteered in various student activities as being a media member at Google developer students club - Helwan university faculty ofengineering, Media vice head at Launtech, UI/UX designer at Launtech, Media vice head at Live in mars - Helwan university</p>
+                    </div>
+                    <div class="boxes">
+                        <div class="subbox1">
+                            <p class="yellow">contact</p>
+                            <p>+2010 9844 2610</p>
+                        </div>
+                        <div class="subbox1">
+                            <p class="yellow">Email</p>
+                            <p>bassanthafez12@gmail.com</p>
+                        </div>
+                </div>
+                <div class="subbox1">
+                    <p class="yellow">Education</p>
+                    <p>Bachelor of computer and systems engineering Helwan university</p>
+                </div>
+                    <div class="icns">
+                        <a href="https://www.facebook.com/bassant.maher.2002?mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.behance.net/bassantmaher1" target="_blank"><i class="fa-brands fa-behance fa-lg"  style="color: #ffde22;"></i></a>
+                <a href="https://github.com/BassantMaher?tab=repositories " target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.linkedin.com/in/bassant-maher-66b1651b8 " target="_blank"><i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffde22;"></i></a>
+                    </div>
+                
+        </div>
+    </div>
+    <!-- end about me -->
+    <a name="skills"></a>
+    <!-- start skills -->
+        <div class="part3">
+            <div class="center">
+                <img src="images/MY SKILLS (2).png" width="70%">
+            </div>
+            <div class="grid2">
+                 <div  class="skill-col-1">
+                   <div class="outer-Container">
+                        <div class="iner-wrapper">
+                          <div class="skill-bar">
+                            <div class="info"><span>Python Programming Language</span></div>
+                            <div class="progress-bar p80"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>C and C++ Programming Language</span></div>
+                            <div class="progress-bar p90"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Java programming language</span></div>
+                            <div class="progress-bar p90"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Adobe XD</span></div>
+                            <div class="progress-bar p100"><span></span></div>
+                          </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div  class="skill-col-2">
+                    <div class="outer-Container">
+                        <div class="iner-wrapper">
+                          <div class="skill-bar">
+                            <div class="info"><span>Algorithms</span></div>
+                            <div class="progress-bar p60"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Data Structure</span></div>
+                            <div class="progress-bar p80"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Problem solving</span></div>
+                            <div class="progress-bar p60"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Adobe illustrator</span></div>
+                            <div class="progress-bar p90"><span></span></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="skill-col-3">
+                    <div class="outer-Container">
+                        <div class="iner-wrapper">
+                          <div class="skill-bar">
+                            <div class="info"><span>HTML, CSS, JavaScript</span></div>
+                            <div class="progress-bar p90"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>GitHub principles</span></div>
+                            <div class="progress-bar p40"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>UI/UX design</span></div>
+                            <div class="progress-bar p80"><span></span></div>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="info"><span>Adobe photoshop</span></div>
+                            <div class="progress-bar p100"><span></span></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        <!-- end my skills -->
+        <a name="gallary"></a>
+        <!-- start gallery -->
+        <div class="part4">
+            <div class="center">
+                <img src="images/MY GALLERY.png" width="70%" >
+                <div id="myBtnContainer">
+                    <button class="btn2 active2" onclick="filterSelection('ALL')"> ALL</button>
+                    <button class="btn2" onclick="filterSelection('UI/UX')"> UI/UX</button>
+                    <button class="btn2" onclick="filterSelection('GRAPHIC-DESIGN')">GRAPHIC DESIGN</button>
+                    <button class="btn2" onclick="filterSelection('PYTHON')"> PYTHON</button>
+                    <!-- <button class="btn2" onclick="filterSelection('C++')"> C++</button> -->
+                </div>
+        </div>
+            <!-- Gallery Grid -->
+            <div class="row">
+            
+            <div class="column PYTHON">
+                <div class="content">
+                <a href="https://github.com/BassantMaher/Hangman-game" target="_blank"><img src="images/python/Untitled-1.jpg" alt="Hangman game" style="width:100%"></a>
+                <h4>Hangman game</h4>
+                </div>
+            </div>
+            <div class="column UI/UX">
+                <div class="content">
+                <a href="https://www.linkedin.com/posts/bassant-maher-66b1651b8_dailyuichallenge-dailyui-dailywebdesign-activity-7030249387125530624-Zzwr?utm_source=share&utm_medium=member_android " target="_blank"><img src="images/ui-ux/signUp 001.jpg" alt="Sign up page" style="width:100%"></a>
+                <h4>Sign up page</h4>
+                </div>
+            </div>
+            <div class="column GRAPHIC-DESIGN">
+                <div class="content">
+                <a href="https://www.behance.net/gallery/176317955/KEEP-GOING" target="_blank"><img src="images/graphic/عافر و كده.png" alt="Keep going" style="width:100%"></a>
+                <h4>Keep going</h4>
+                </div>
+            </div>
+            <div class="column GRAPHIC-DESIGN">
+                <div class="content">
+                <a href="https://www.behance.net/gallery/174551113/GDSC-FLYER-SEASON-1 " target="_blank"><img src="images/graphic/Untitled-2.jpg" alt="GDSC Flyer II" style="width:100%"></a>
+                <h4>GDSC Flyer II</h4>
+                </div>
+            </div>
+            <div class="column GRAPHIC-DESIGN">
+                <div class="content">
+                <a href="https://www.behance.net/gallery/163392319/KALOPSIA " target="_blank"><img src="images/graphic/Untitled-3.jpg" alt="Kalopsia design" style="width:100%"></a>
+                <h4>Kalopsia design</h4>
+                </div>
+            </div>
+            <div class="column GRAPHIC-DESIGN">
+                <div class="content">
+                <a href="https://www.behance.net/gallery/156455963/glowy-jellyfish " target="_blank"><img src="images/graphic/Untitled-4.jpg" alt="Glowy jelly fish" style="width:100%"></a>
+                <h4>Glowy jelly fish</h4>
+                </div>
+            </div>
+            <div class="column UI/UX">
+                <div class="content">
+                <a href="https://www.linkedin.com/posts/bassant-maher-66b1651b8_dailyui-dailyuichallenge-activity-7031000738533105664-D5eB?utm_source=share&utm_medium=member_android " target="_blank"><img src="images/ui-ux/mockup.jpg" alt="Rolex landing page" style="width:100%"></a>
+                <h4>Rolex landing page</h4>
+                </div>
+            </div>
+            <div class="column UI/UX">
+                <div class="content">
+                <a href="https://www.linkedin.com/posts/bassant-maher-66b1651b8_dailyui-dailychallenge-activity-7030507385542586368-yvPL?utm_source=share&utm_medium=member_android " target="_blank"><img src="images/ui-ux/creditCard 002 (2).jpg" alt="Credit card" style="width:100%"></a>
+                <h4>Credit card</h4>
+                </div>
+            </div>
+            <div class="column UI/UX">
+                <div class="content">
+                <a href="https://www.linkedin.com/posts/bassant-maher-66b1651b8_dailyuichallenge-dailyui-dailyuichallenge-activity-7032139780310077441-grNZ?utm_source=share&utm_medium=member_android " target="_blank"><img src="images/ui-ux/simpleCalculator 004.jpg" alt="Simple calculator" style="width:100%"></a>
+                <h4>Simple calculator</h4>
+                </div>
+            </div>
+            <div class="column GRAPHIC-DESIGN">
+                <div class="content">
+                <a href="https://www.behance.net/gallery/158658297/GDSC-HUFE-flyer " target="_blank"><img src="images/graphic/Untitled-1.jpg" alt="GDSC Flyer I" style="width:100%"></a>
+                <h4>GDSC Flyer I</h4>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- end gallery -->
+
+            <!-- js for gallery filteration -->
+            <script>
+            filterSelection("ALL")
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            // clear any filter on the blocks
+            if (c == "ALL") c = "";
+            for (i = 0; i < x.length; i++) {
+                // initially remove all classes
+                RemoveClass(x[i], "show");
+                // add the specifies classes under the class name condition only
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+            }
+
+            function AddClass(element, name) {
+            var i, arr1, arr2;
+            // add elements to an array
+            arr1 = element.className.split(" ");
+            // add the show class in css in an array
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                // if the element in arr1 has no show class then add the show property to it
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+            }
+
+            function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    // splice function to remove the elements from the array 
+                    // given start index and no of elements to be removed 
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            // joins the modified list with the rest of elements 
+            element.className = arr1.join(" ");
+            }
+
+
+            // Add active2 class to the current button ( pink color *_* )  
+                    //  to get the element that contains all the buttons
+            var btnContainer = document.getElementById("myBtnContainer");
+            //  get all the buttons in the container using class name
+            var btns = btnContainer.getElementsByClassName("btn2");
+            //  loop over each button
+            for (var i = 0; i < btns.length; i++) {
+                // if a specific button is clicked do the following function
+            btns[i].addEventListener("click", function(){
+                // get the button that has the class name active to remove it
+                var current = document.getElementsByClassName("active2");
+                // remove the active class by the replace function that replaces the class with empty string
+                current[0].className = current[0].className.replace(" active2", "");
+                // add the class active to the clicked button
+                this.className += " active2";
+            });
+            }
+            </script>
+
+        </div>
+        <!-- start footer section  -->
+        <div class="footer">
+            <div class="icnsfoot">
+                <a href="https://www.facebook.com/bassant.maher.2002?mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.behance.net/bassantmaher1" target="_blank"><i class="fa-brands fa-behance fa-lg"  style="color: #ffde22;"></i></a>
+                <a href="https://github.com/BassantMaher?tab=repositories " target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #ffde22;"></i></a>
+                <a href="https://www.linkedin.com/in/bassant-maher-66b1651b8 " target="_blank"><i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffde22;"></i></a>
+                
+            </div><hr>
+            © 2023 Bassant Maher All rights reserved</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
