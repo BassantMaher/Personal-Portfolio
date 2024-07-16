@@ -15,6 +15,8 @@ This repository contains the source code for my personal portfolio website, show
 
 ![Portfolio Screenshot](images/6.png)
 
+![Portfolio Screenshot](images/7.png)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
