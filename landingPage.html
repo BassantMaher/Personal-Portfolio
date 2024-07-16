@@ -49,18 +49,20 @@
               <input type="email" placeholder="Your Email" name="email" id="email"  required>
               <label for="msg"><b>Message</b></label>
               <textarea name="msg" placeholder="Your message" rows="5" cols="20" id="message" required></textarea>
-              <button type="button" class="btn" onclick="displayDetails();" id="sendMsg">Send Message</button>
+              <button type="button" class="btn" onclick="displayDetails();">Send Message</button>
               <button type="button" class="btn cancel" onclick="closeForm();">Cancel</button>
             </form>
           </div>
-          <script>
+          <!-- <script>
             let disp = document.getElementById("sendMsg");
             disp.addEventListener("click", function(){
-                document.getElementById("myForm").style.display = "none";
+                let email = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+                console.log("your email: " + email + "\nyour message: " + message);
             }
 
             );
-          </script>
+          </script> -->
           <!-- end form -->
           <!-- create body -->
         <div class="body">
@@ -90,7 +92,7 @@
                     <div class="boxes">
                         <div class="subbox1">
                             <p class="yellow">contact</p>
-                            <p>+2010 9844 2610</p>
+                            <p>+2010 **** ****</p>
                         </div>
                         <div class="subbox1">
                             <p class="yellow">Email</p>
@@ -268,31 +270,24 @@
             </div>
             </div>
             <!-- end gallery -->
-
             <!-- js for gallery filteration -->
             <script>
             filterSelection("ALL")
             function filterSelection(c) {
             var x, i;
             x = document.getElementsByClassName("column");
-            // clear any filter on the blocks
             if (c == "ALL") c = "";
             for (i = 0; i < x.length; i++) {
-                // initially remove all classes
                 RemoveClass(x[i], "show");
-                // add the specifies classes under the class name condition only
                 if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
             }
             }
 
             function AddClass(element, name) {
             var i, arr1, arr2;
-            // add elements to an array
             arr1 = element.className.split(" ");
-            // add the show class in css in an array
             arr2 = name.split(" ");
             for (i = 0; i < arr2.length; i++) {
-                // if the element in arr1 has no show class then add the show property to it
                 if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
             }
             }
@@ -303,37 +298,27 @@
             arr2 = name.split(" ");
             for (i = 0; i < arr2.length; i++) {
                 while (arr1.indexOf(arr2[i]) > -1) {
-                    // splice function to remove the elements from the array 
-                    // given start index and no of elements to be removed 
                 arr1.splice(arr1.indexOf(arr2[i]), 1);     
                 }
             }
-            // joins the modified list with the rest of elements 
             element.className = arr1.join(" ");
             }
 
 
-            // Add active2 class to the current button ( pink color *_* )  
-                    //  to get the element that contains all the buttons
+            // Add active2 class to the current button ( pink color *_* )           
             var btnContainer = document.getElementById("myBtnContainer");
-            //  get all the buttons in the container using class name
             var btns = btnContainer.getElementsByClassName("btn2");
-            //  loop over each button
             for (var i = 0; i < btns.length; i++) {
-                // if a specific button is clicked do the following function
             btns[i].addEventListener("click", function(){
-                // get the button that has the class name active to remove it
                 var current = document.getElementsByClassName("active2");
-                // remove the active class by the replace function that replaces the class with empty string
                 current[0].className = current[0].className.replace(" active2", "");
-                // add the class active to the clicked button
                 this.className += " active2";
             });
             }
             </script>
 
         </div>
-        <!-- start footer section  -->
+        
         <div class="footer">
             <div class="icnsfoot">
                 <a href="https://www.facebook.com/bassant.maher.2002?mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #ffde22;"></i></a>

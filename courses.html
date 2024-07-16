@@ -47,18 +47,10 @@
               <label for="msg"><b>Message</b></label>
               <!-- <input type="" placeholder="Your message" name="msg" id="message" required> -->
               <textarea name="msg" placeholder="Your message" rows="5" cols="20" id="message" required></textarea>
-              <button type="button" class="btn" onclick="displayDetails();" id="sendMsg">Send Message</button>
+              <button type="button" class="btn" onclick="displayDetails();">Send Message</button>
               <button type="button" class="btn cancel" onclick="closeForm();">Cancel</button>
             </form>
           </div>
-          <script>
-            let disp = document.getElementById("sendMsg");
-            disp.addEventListener("click", function(){
-                document.getElementById("myForm").style.display = "none";
-            }
-
-            );
-          </script>
           <!-- end form -->
         <div class="bodycourse">
             <div class="courses">
